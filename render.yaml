@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: nawab-md
+    env: node
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    envVars:
+      - key: BOT_NAME
+        value: NAWAB-MD
+      - key: OWNER_NAME
+        value: NAWAB DEV
+      - key: PREFIX
+        value: .
+      - key: CHANNEL_URL
+        value: https://whatsapp.com/channel/0029VbDamhwGufIs5YfKmd1i
+      - key: REPO_URL
+        value: https://github.com/mrx29800-byte/NAWAB-MD
