@@ -1,0 +1,37 @@
+{
+  "name": "nawab-md",
+  "version": "1.0.0",
+  "description": "NAWAB-MD — Multi-Device WhatsApp Bot with phone-number pairing.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "start:pm2": "pm2 start index.js --name nawab-md",
+    "stop": "pm2 stop nawab-md",
+    "restart": "pm2 restart nawab-md",
+    "logs": "pm2 logs nawab-md",
+    "status": "pm2 status"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "author": "NAWAB-MD",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrx29800-byte/NAWAB-MD.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrx29800-byte/NAWAB-MD/issues"
+  },
+  "homepage": "https://github.com/mrx29800-byte/NAWAB-MD",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^7.0.0-rc14",
+    "dotenv": "^16.3.1",
+    "express": "^4.19.2",
+    "fs-extra": "^11.1.0",
+    "pino": "^9.4.0",
+    "qrcode-terminal": "^0.12.0",
+    "yt-search": "^2.11.0"
+  }
+}
